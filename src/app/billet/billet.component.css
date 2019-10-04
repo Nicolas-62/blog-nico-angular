@@ -1,0 +1,11 @@
+.billet_entete{
+	display: flex;
+	justify-content: space-between;
+}
+.billet_title{
+	font-size: 2em;
+}
+.billet_date{
+	font-style: italic;
+	color: gray;
+}
