@@ -1,12 +1,12 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div>
+<div class="container">
   <h1>Bienvenue sur le {{ title }}!</h1>
   <h1>Posts</h1>
-      <ul class="list-group">
-        <app-billet  *ngFor="let billet of billets"
-                       [billet_title]="billet.title"
-                       [billet_content]="billet.content"
-                       [billet_loveIts]="billet.loveIts"
-                       [billet_created_at]="billet.created_at"></app-billet>
-      </ul> 
+    <ul class="list-group">
+      <app-billet  *ngFor="let billet of billets"
+                     [billet_title]="billet.title"
+                     [billet_content]="billet.content"
+                     [billet_loveIts]="billet.loveIts"
+                     [billet_created_at]="billet.created_at">                    	
+       </app-billet>
+    </ul> 
 </div>

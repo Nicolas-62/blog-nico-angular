@@ -6,8 +6,6 @@
 	  <div class="billet_title" [ngStyle]="{color: getColor()}">{{ billet_title }}</div>
 	  <div class="billet_date">{{ billet_created_at | date: 'dd/MM/y, hh:mm a' | uppercase }}</div>
 	</div>
-  <!-- ngModel = two-way binding : directive par attribut-->
-  <!-- le fait de modifier une instance (un élément de la liste) ne change rien aux autres.  Ce concept est très important, et il s'agit de l'une des plus grandes utilités d'Angular. -->
   <p [ngStyle]="{color: getColor()}">{{ billet_content }}</p>
   <button class="btn btn-sm btn-success"
               (click)="onLoveIt()">J'adore !!!</button>

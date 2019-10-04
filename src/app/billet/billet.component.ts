@@ -16,6 +16,9 @@ export class BilletComponent implements OnInit {
 
   ngOnInit() {
   }
+  /* retourne la couleur css à appliquer à la police en fonction 
+   * du nombre de likes
+   */
   getColor(){
   	if(this.billet_loveIts > 0){
   		return 'green';
@@ -25,9 +28,13 @@ export class BilletComponent implements OnInit {
   		return 'gray';
   	}
   }
+  /* ajoute un like au post au clique du bouton 'j'adore !!!''
+  */
   onLoveIt(){
   	this.billet_loveIts++;
   }
+  /* enlève un like au post au clique du bouton 'Null null !!!''
+  */  
   onDontLoveIt(){
   	this.billet_loveIts--;
   }
